@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { useNavigate, Link } from 'react-router-dom';
-import { getConfig } from '../utils';
+import { Link } from 'react-router-dom';
+
 import { useDispatch, useSelector } from "react-redux";
 import { getShopThunk, filterCategoryThunk, getCategoriesThunk, filterContainNameThunk } from "../redux/actions";
 

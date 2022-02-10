@@ -14,7 +14,6 @@ import rootReducer from "./redux/reducers";
 const store = createStore(
   rootReducer,
   composeWithDevTools(applyMiddleware(thunk))
-  +  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );
 
 ReactDOM.render(

@@ -1,4 +1,4 @@
-import { HashRouter, Route, Routes, Navigate,Link } from "react-router-dom";
+import { HashRouter, Route, Routes, Navigate } from "react-router-dom";
 import { ProtectedRoutes, MainLayout, LoadingScreen } from "./components";
 import { Card, Login, ShopDetail, Shop, RegisterUser} from './pages';
 import { useSelector } from 'react-redux';

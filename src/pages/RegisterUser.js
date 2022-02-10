@@ -20,7 +20,7 @@ const RegisterUser = () => {
       <div className='backRegister'>
          <h1 className='titulo'>Sign up</h1>
 
-            <form className='form' onSubmit={handleSubmit(submit)}>
+            <form className='form2' onSubmit={handleSubmit(submit)}>
                 <div className='formRegister'>
                     <label htmlFor='email'>Email: </label>
                     <input  
