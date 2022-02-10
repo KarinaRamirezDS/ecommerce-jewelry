@@ -9,17 +9,19 @@ import thunk from "redux-thunk";
 // Aquí importamos el reducer creado anteriormente
 import rootReducer from "./redux/reducers";
 
+
+
 const store = createStore(
   rootReducer,
-  composeWithDevTools(applyMiddleware(thunk))
+  composeWithDevTools(applyMiddleware(thunk,  devToolsEnhancer))
 );
 
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
-      {" "}
-      {/* Aquí sólamente encerramos a <App/> */}
-      <App /> {/* En el provider */}
+    
+      <App /> 
+      
     </Provider>
   </React.StrictMode>,
   document.getElementById("root")
