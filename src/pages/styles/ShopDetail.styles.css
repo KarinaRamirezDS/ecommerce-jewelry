@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri&family=Arapey&family=Nanum+Myeongjo&family=Parisienne&family=Tangerine&display=swap');
+*{
+  padding:0;
+  margin:0;
+}
+.contenidoDetail{
+ 
+    display: flex;
+    flex-direction: row;
+    margin-top: 10%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10%;
+   
+}
+
+.contenidoImagen{
+     width: 50%;
+     display: flex;
+     flex-direction: row;
+     justify-content:center;
+     background-color: bisque;   
+    
+}
+.imagenDetail{ 
+    width: 300px;
+    height: 300px; 
+    border-radius: 10px;
+ }
+
+.contenidoDescription{
+    width: 50%;
+    background-color: bisque;
+    display: flex;
+     flex-direction: column;
+     justify-content:center;
+     align-items: center; 
+}
+.contenidoDescription h1{
+  display: flex;
+   flex-direction: column;
+  align-items: center; 
+  padding: 5%;
+  color:gray;
+}
+.contenidoDescription p{
+  display: flex;
+  font-size: large;
+   flex-direction: column;
+  align-items: center; 
+  padding: 2%;
+}
+.contenidoDescription button{
+  display: flex;
+  font-size: large;
+  background: transparent;
+  border: none;
+  align-items: center; 
+  padding: 2px;
+  color: darkgoldenrod;
+
+
+}
+
+
+
+
+
+.relacion{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  width: 100%;
+  justify-content: space-evenly;
+  padding: 8%;
+}
+.relacion h3{
+  font-family: Nanum;
+  font-size: 1.5rem;
+  padding: 5%;
+  color:gray;
+}
+
+.relacionados{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: grey;
+}
+  
+  .shopImage{
+    width: 180px;
+    height: 180px;
+    border-radius: 10px;
+    padding: 15px;
+  }
+  .shopImage:hover{
+    width: 200px;
+    height: 200px;
+  }
+  li{
+    list-style:none;
+  }
+
+
+  
+@media only screen and (max-width: 600px){
+  .contenidoDetail{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    width: 100%;
+    margin: 10%;
+}
+.contenidoImagen{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  background-color: bisque;
+
+}
+.contenidoDescription{
+  width: 100%;
+  background-color: bisque;
+  display: flex;
+   flex-direction: column;
+   justify-content:center;
+   align-items: center; 
+}
+
+}

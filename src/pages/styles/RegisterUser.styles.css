@@ -1,0 +1,60 @@
+.backRegister{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-image: url('./img/joyeria1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center; 
+}
+
+.titulo{
+   padding: 1em;
+   font-family: Amiri;
+   font-weight: 800;
+   color: rgb(148, 111, 19);
+   font-size: xx-large;
+}
+
+.form{
+    background-color: #00000080;
+    color: white;
+    display: flex;
+    width: 55%;
+  
+    align-items: center;
+    border-radius: 15px;
+    justify-content: space-evenly;
+
+}
+
+.formRegister{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+.formRegister label{
+    font-family: Amiri;
+    font-size: x-large;
+    font-weight: 500;
+    color: white;
+}
+.formRegister input{
+    font-family: inherit;
+    width: 65%;
+    border: 0;
+    border-bottom: 2px solid rgb(26, 25, 25);
+    outline: 0;
+    font-size: 1.3rem;
+    padding: 7px;
+    padding-left: 10px;;
+    background: transparent;
+    transition: border-color 0.2s;
+}
+.formRegister input::placeholder {
+    color: #ffffff80;
+    font-size: .7em;
+  }

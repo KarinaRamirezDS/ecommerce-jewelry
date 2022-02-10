@@ -1,38 +1,265 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Amiri&family=Arapey&family=Nanum+Myeongjo&family=Parisienne&family=Tangerine&display=swap');
+*{
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+body{
+  
+  justify-items: center;
+  flex-wrap: wrap;
+  align-content: center;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: antiquewhite;
+  /* background-image: url('./pages/styles//img/joyeria3.jpg');
+  background-size: cover;
+  background-repeat: no-repeat; */
+  width: 100%;
+}
+
+nav{
+  position: fixed;
+  display: flex;
+
+  justify-items: center;
+  align-items: center;
+  background-color: #00000080;
+  height: 4rem;
+  width: 100%;
+  position: fixed;
+  top: 0;
   color: white;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  
+ 
+}
+nav:hover{
+
+  display: flex;
+ background-color: #000000;
+  height: 4rem;
+  width: 100%;
+  position: fixed;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.shop{
+  display: flex;
+  padding-right: 10%;
+  font-size: 2rem;
+  color: whitesmoke;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.linkLista{
+  display: flex;
+  font-weight: 400;
+  text-decoration: none;
+  font-size: 2.3rem;
+  color: whitesmoke;
+  margin-left: 8%;
+  justify-self: flex-start;
+  font-family: Amiri;
 }
+.linkLista2{
+  display: flex;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: whitesmoke;
+  justify-content: flex-end;
+  margin-left: 10px;
+  background-color: transparent;
+  border: none;
+}
+.linkLista2:hover{
+  display: flex;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: chocolate;
+  justify-content: flex-end;
+  margin-left: 10px;
+  background-color: transparent;
+  border: none;
+}
+section{
+  width:100%;
+  height: 400px;
+  background-color: cadetblue;
+  background-image: url('./pages/styles/img/joyeria.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.frase{
+  font-family: Tangerine;
+  font-size: 50px;
+  text-align: center;
+  padding-top: 30px;
+  margin: 30px;
+}
+.category {
+  margin: 30px;
+  margin-top: 130px;
+}
+.category ul{
+  display: flex;
+  flex-direction: wrap;
+  justify-content: space-evenly;
+  margin: 20px;
+}
+.category ul li{
+ 
+  list-style:none;
+}
+.category ul li button{
+  
+  border: 0;
+  border-bottom: 2px solid gray;
+  background: transparent;
+  font-family: Amiri;
+  font-size: 26px;
+
+}
+.category ul li button:hover{
+  
+  font-size: 30px;
+  font-weight: 400;
+  border: 0;
+  border-bottom: 2px solid #fab29b;
+  background: transparent;
+  font-family: Amiri;
+  font-size: 26px;
+
+}
+
+.search{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 10%;
+}
+.search input{
+  font-family: inherit;
+  width: 20%;
+  border: 0;
+  border-bottom: 2px solid gray;
+  outline: 0;
+  font-size: 1.3rem;
+  color: rgb(56, 53, 53);
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+
+.search input:hover{
+  font-family: inherit;
+  width: 20%;
+  border: 0;
+  border-bottom: 2px solid rgb(202, 132, 132);
+  outline: 0;
+  font-size: 1.3rem;
+  color: rgb(202, 132, 132);
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+.search button{
+  border-radius: 5px;
+  background: transparent;
+  border: none;
+  font-size: x-large;
+  padding: 5px;
+  color: gray;
+}
+.search button:hover{
+  border-radius: 5px;
+  background: transparent;
+  border: none;
+  font-size: xx-large;
+  padding: 5px;
+  color: rgb(202, 132, 132);
+}
+.productos{
+
+ width: 100%;
+ justify-content: space-evenly;
+ flex-direction: wrap;
+ align-content: center;
+ flex-wrap: wrap;
+ display: flex;
+ 
+}
+.card{
+ 
+  width: 250px;
+  height: 355px;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  align-content: center;
+  
+  text-align: center;
+  margin: 70px;
+  
+  box-shadow: -1px 15px 30px -12px rgb(29, 28, 28);
+  transition: all 0.3s ease;
+  
+  
+}
+
+.linkCard{
+  
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1rem;
+  justify-content:center;
+  margin-left: 10px;
+  color: rgb(105, 104, 104);
+  margin:0;
+
+}
+.cardImage{
+  width: 250px;
+  height: 200px;
+  position: relative;
+  padding:0;
+}
+
+
+.imagenLista{
+  width: 100%;
+  height:200px;
+  border-radius: 15px 15px 0 0;
+  margin-top: 0;
+ padding-top: 0;
+}
+
+.imagenLista2{
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+  height:200px;
+ position: absolute;
+ top:0;
+ left: 0;
+ right:0;
+ bottom: 0;
+ opacity: 0;
+ transition: all 300ms;
+
+}
+.imagenLista2:hover{
+  position: absolute;
+  border-radius: 12px 12px 0 0;
+  top: 0px;;
+  left: 0;
+  right:0;
+  bottom: 0;
+  opacity: 1;
+  padding: 0;
+ }
+
