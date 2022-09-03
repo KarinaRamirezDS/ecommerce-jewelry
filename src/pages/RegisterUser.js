@@ -58,7 +58,7 @@ const RegisterUser = () => {
                     {...register('password')}   
                     />
                 </div>
-                <Link className='buttonLogin' to="/Login">Sign up</Link>
+                    <button className='inputSignUp'><Link className='link' to="/Login">Sign up</Link></button>
                
             </form>
   </div>
