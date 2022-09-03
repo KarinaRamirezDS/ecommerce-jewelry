@@ -3,6 +3,7 @@ import { useForm } from 'react-hook-form';
 import { useDispatch} from 'react-redux';
 import {userCreateThunk} from '../redux/actions';
 import "./styles/RegisterUser.styles.css"
+import { Link } from 'react-router-dom';
 
 
 const RegisterUser = () => {
@@ -58,6 +59,7 @@ const RegisterUser = () => {
                     />
                 </div>
                 <button className='buttonLogin'>Sign up</button>
+                <Link className='link' to="/Login">Sign up</Link>
             </form>
   </div>
   );
