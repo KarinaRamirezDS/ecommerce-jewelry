@@ -33,7 +33,10 @@ const Login = () => {
     </video>
       
       <form className="form" action="" onSubmit={handleSubmit(submit)}>
+                                                 
       <h1> Sign In </h1>
+         <label> Usuario: admin@admin.com</label>
+         <label> Password: root</label>                                                 
         <div className="input-container">
           <label className="label" htmlFor="email"><i className="fas fa-envelope"></i> </label>
           <input className="inputLogin" {...register("email")} type="email" required placeholder="admin@admin.com"/>
