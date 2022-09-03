@@ -58,8 +58,8 @@ const RegisterUser = () => {
                     {...register('password')}   
                     />
                 </div>
-                <button className='buttonLogin'>Sign up</button>
-                <Link className='link' to="/Login">Sign up</Link>
+                <button className='buttonLogin'>  <Link className='buttonLogin' to="/Login">Sign up</Link> </button>
+               
             </form>
   </div>
   );
