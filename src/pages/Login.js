@@ -47,7 +47,7 @@ const Login = () => {
         </div>
         {loginError}
         <button className="buttonLogin">Login</button>
-        //<button className='inputSignUp'><Link className='link' to="/RegisterUser">Sign up</Link></button>
+      
       </form>
 
       
